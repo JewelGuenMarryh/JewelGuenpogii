@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guen Gallery</title>
+    <link rel="stylesheet" href="lightbox.css">
+    <link rel="icon" href="kiangfam.jpg" type="image/x-icon">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'poppins', sans-serif;
+        }
+
+        body {
+            background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(kiangfam.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+
+        .container {
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 50px 8%;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-gap: 30px;
+        }
+
+        .gallery img {
+            width: 100%;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="gallery">
+        <a href="LMC1.jpg" data-lightbox="models" data-title="Caption1"><img src="LMC1.jpg" alt=""></a>
+        <a href="LMC2.jpg" data-lightbox="models" data-title="Caption1"><img src="LMC2.jpg" alt=""></a>
+        <a href="LMC3.jpg" data-lightbox="models" data-title="Caption1"><img src="LMC3.jpg" alt=""></a>
+        <a href="LMC4.jpg" data-lightbox="models" data-title="Caption1"><img src="LMC4.jpg" alt=""></a>
+        <a href="LMC5.jpg" data-lightbox="models" data-title="Caption1"><img src="LMC5.jpg" alt=""></a>
+        <a href="LMC6.jpg" data-lightbox="models" data-title="Caption1"><img src="LMC6.jpg" alt=""></a>
+        <a href="LMC7.jpg" data-lightbox="models" data-title="Caption1"><img src="LMC7.jpg" alt=""></a>
+        <a href="LMC8.jpg" data-lightbox="models" data-title="Caption1"><img src="LMC8.jpg" alt=""></a>
+        <a href="LMC9.jpg" data-lightbox="models" data-title="Caption1"><img src="LMC9.jpg" alt=""></a>
+        <a href="LMC10.jpg" data-lightbox="models" data-title="Caption1"><img src="LMC10.jpg" alt=""></a>
+        <video src="vid1.mp4" autoplay controls loop muted></video>
+        <video src="vid2.mp4" autoplay controls loop muted></video>
+        <video src="vid3.mp4" autoplay controls loop muted></video>
+        <video src="vid4.mp4" autoplay controls loop muted></video>
+        <video src="vid5.mp4" autoplay controls loop muted></video>
+        <video src="vid6.mp4" autoplay controls loop muted></video>
+        <video src="vid7.mp4" autoplay controls loop muted></video>
+        <video src="vid8.mp4" autoplay controls loop muted></video>
+        <video src="vid9.mp4" autoplay controls loop muted></video>
+    </div>
+    </div>
+    <script src="lightbox-plus-jquery.js"></script>
+</body>
+</html>

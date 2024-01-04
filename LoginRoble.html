@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			font font-family: cursive;
+		}
+
+		body {
+			background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(bg.jpg);
+			background-size: cover;
+			background-position: center;
+
+		}
+
+		.ib {
+			position: relative;
+			margin: 30px 0;
+			width: 310px;
+			border-bottom: 2px solid #030306;
+		}
+		.ib input {
+			width: 100%;
+			height: 45px;
+			background: transparent;
+			border: none;
+			outline: none;
+			font-size: 1em;
+			padding: 0 35px 0 5px;
+			color: white;
+			font-weight: 500;
+		}
+		input:focus ~ label,
+		input:valid ~ label {
+			top: 10px;
+		}
+		.ib .icon {
+			position: absolute;
+			right: 1px;
+			margin-top: 15px;
+			font-size: 1.5em;
+		}
+		.ib label {
+			position: absolute;
+			top: 80%;
+			left: 5px;
+			transform: translateY(-20px);
+			color: black;
+			font-size: 1em;
+			pointer-events: none;
+			transition: .5s;
+			font-family: cursive;
+		}
+		.rf a {
+         	color: black;
+         	text-decoration: none;
+         	margin-left: 60px;
+     	}
+     	.rf a:hover {
+         	text-decoration: underline;
+         
+      	}
+     	.rf {
+       		margin: -15px 0 15px; 
+       		font-family: cursive;    
+        	font-size:14.5px;
+        	color: black;
+        	display: flex;
+       		justify-content: space-between;
+       	 	margin-top: 1px;
+     	}	
+     	.reg {
+         	margin-top: 30px;
+         	text-align: center;
+         	color: black;
+         	font-family: cursive;
+         	font-size:14.5px;
+    	}
+
+	</style>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Login</title>
+</head>
+<body>
+	<section style="display: flex;justify-content: center;align-items: center;min-height: 100vh;width: 100%;">
+		<div id="error" style="position: relative;width: 370px;height: 400px;background: transparent;border: 2px solid rgba(255, 255, 255, 0.5);border-radius: 20px;backdrop-filter: blur(3px);display: flex;justify-content: center;align-items: center;">
+			<form id="form" action="LuxMundiCup.html" method="get">
+				<h1 style="font-size: 2em;color: black;text-align: center; font-family: cursive;">Login</h1>
+				<div class="ib">
+					<span class="icon">
+					<ion-icon name="person-circle"></ion-icon></span>
+					<input type="email" id="email" required>
+					<label for="">Username</label>
+				</div>
+				<div class="ib">
+					<span class="icon">
+					<ion-icon name="lock-closed"></ion-icon></span>
+	 				<input type="password" id="password" required>
+	 				<label for="">Password</label>
+				</div>
+				<div class="rf">
+					<label><input type="checkbox">Remember me</label>
+					<a href="">Forgot password?</a>
+				</div>
+				<button type="submit" style=" width: 100%; height: 40px; border-radius: 12px; background: #308722; border: none; outline: none; cursor: pointer; font-size: 1em; font-weight: 600; box-shadow: 0 0 20px"><b>Login</b></button>
+				<div class="reg">
+					<p>Don't have an account?&nbsp&nbsp<a href="Register.html">Register</a></p>
+				</div>
+			</form>
+			
+		</div>
+	</section>
+	<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+	<script>
+		const email = document.getElementById('email')
+		const password = document.getElementById('password')
+		const form = document.getElementById('form')
+
+		form.addEventListener('submit', (e) => {
+			let messages = []
+			if (password.value !== 'jewelguen') {
+			alert("password is incorrect!");
+			e.preventDefault()
+			errorElement.innerText = messages.join(', ')
+		}
+
+			if (email.value !== 'JewelGuen@gmail.com') {
+			alert("Email is incorrect!");
+			e.preventDefault()
+			errorElement.innerText = messages.join(', ')
+		}
+		})
+	</script>
+</body>
+</html>

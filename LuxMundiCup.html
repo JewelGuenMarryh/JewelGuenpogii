@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page ICS</title>
+    <script src="https://use.fontawesome.com/d1341f9b7a.js"></script>
+    <link rel="icon" href="icon.jpg" type="image/x-icon">
+</head>
+<style>
+
+    .banner {
+        width: 100%;
+        height: 100vh;
+
+    }
+    body {
+        background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(bgme2.jpg);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        margin: 0;
+        padding: 0;
+      }
+    #preloader {
+			background: black url(preloader.png)  no-repeat center;
+			background-size: 30%;
+			height: 100vh;
+			width: 100%;
+			position: fixed;
+			z-index: 100;
+		}
+    .navbar {
+        background: rgba(0, 66, 0, 0.7);
+        width: 90%;
+        margin: auto;
+        padding: 5px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-right: 100px;
+        border-radius: 10px;
+    }
+    .navbar ul li{
+        list-style: none;
+        display: inline-block;
+        margin: 0 20px;
+        position: relative;
+    }
+    .navbar ul li a{
+         text-decoration: none;
+         color: white; 
+         font-weight: bold;
+    }
+    .navbar ul li::after{
+        content: '';
+        margin-left: -15%;
+        height: 3px;
+        width: 0%;
+        cursor: pointer;    
+        background: rgb(147, 150, 1);
+        position: absolute;
+        border-style: none;
+        border-radius: 10px;
+        left: 0;    
+        bottom: -10px;
+        transition: 0.5s;
+        
+    }
+    .navbar ul li:hover:after{
+        width: 120%;
+        border-style: double;
+    }
+    .logo {
+        width: 450px;
+        cursor: pointer;
+        padding-right: 5px;
+        border-radius: 100px;     
+    }
+    
+    .wiw {
+        display: flex;
+        height: 70%;
+        align-items: center;
+        padding-left: 50px;
+
+    }
+    h1 {
+        font-family: cursive;
+    }
+    .yes {
+        flex-basis: 50%;
+    }
+    
+        .box {
+            width: 350px;
+            height: 520px;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 30px;
+            text-align: center;
+            margin: auto;
+            margin-top: 5%;
+            color: rgb(255, 255, 255);
+            font-family: 'Times New Roman', Times, serif;
+            border-radius: 3px;
+        }
+
+        .ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box .li {
+            display: inline-block;
+            margin: 6px;
+            list-style: none;
+        }
+
+        .box .li .a {
+            color: white;
+            text-decoration: none;
+            font-size: 50px;
+        }
+
+        .box .li .a:hover {
+            color: darkgreen;
+            text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
+            text-decoration: none;  
+        }
+
+</style>
+<body>
+    <div id="preloader"></div>
+   <div class="banner">
+    <div class="navbar">
+    <img src="Guenwhite2.png" onclick="Jewel()" class="logo"> 
+    <ul>
+        <li class="link"><a href="GuenLMC.html">About LMC 2023</a></li>
+        <li class="link"><a href="Gallery.html">Gallery</a></li>
+      </ul>
+      </div>
+      <div class="wiw">
+        <div class="box">
+            <img src="dpkiang.jpg" width="210" height="250" alt="" class="dp" style="border-radius: 10px;">
+            <h1>Jewel Guen Marryh T. Roble</h1>
+            <h5>BSCS - 1</h5>
+            <p>Everyone should know how to program a computer, because it teaches you how to think. - Steve Jobs</p>
+            <ul>
+                <li class="li"><a class="a" href="https://www.facebook.com/jewel.roble.3"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+                <li class="li"><a class="a" href="https://www.instagram.com/jewelguen/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                <li class="li"><a class="a" href="https://open.spotify.com/track/5Fd57k6SVtzmddpHa5Axpv"><i class="fa fa-spotify" aria-hidden="true"></i></a></li>
+            </ul>
+            </div>
+     </div>
+     <script>
+        function Jewel(){
+            window.location.assign("mememe.html");
+        }
+     </script>
+     <script>
+		var loader = document.getElementById("preloader");
+		window.addEventListener("load", function(){
+			loader.style.display = "none";
+		})
+	</script>
+</body>
+</html>

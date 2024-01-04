@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guen Gallery</title>
+    <link rel="stylesheet" href="lightbox.css">
+    <link rel="icon" href="Jewel8.jpg" type="image/x-icon">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'poppins', sans-serif;
+        }
+
+        body {
+            background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(kiangfam.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+
+        .container {
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 50px 8%;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+            grid-gap: 50px;
+        }
+
+        .gallery img {
+            width: 100%;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="gallery">
+        <a href="Jewel8.jpg" data-lightbox="models" data-title="I am Jewel Guen Marryh Tabanao Roble, I graduated at Iligan Computer Institute (ICI) as an Information Technology student. And I am basically a Computer Science student here at Tangub City Global College (TCGC). I am beyond honor to this program which lead me to know about more computer programming."><img src="Jewel8.jpg" alt=""></a>
+        <a href="Jewel2.jpg" data-lightbox="models" data-title="Our first gym together with my papa and my little sister. my sister and I were so happy that time kay first time namo ning uban sa gym and si papa ang kuyog."><img src="Jewel2.jpg" alt=""></a>
+        <a href="Jewel1.jpg" data-lightbox="models" data-title="Every time I dance, I turn into a better version of myself."><img src="Jewel1.jpg" alt=""></a>
+        <a href="Jewel4.jpg" data-lightbox="models" data-title="This is my girlfriend, we've been almost a year together and we've been almost 5 months when we move out to other city (Tangub City). It's our first time mag boarding house we've been so happy staying sa boarding house not until wala najud mi makaon lisud kaayo mag boarding house but kayanon para makahuman."><img src="Jewel4.jpg" alt=""></a>
+        <a href="Jewel3.jpg" data-lightbox="models" data-title="April 28, 2023 When I send this  to my papa, as a gift for him kay wala jud koy kwarta ana nga time. I am beyond thankful to him sa pag paningkamot para lang maka human mi'g skwela sa akong mga igsuon. i love you, pa!"><img src="Jewel3.jpg" alt=""></a>
+        <a href="Jewel5.jpg" data-lightbox="models" data-title="This was taken to our graduation day. I can finally say that time that (Ma, Pa, I made it, na paid off najud tanang kahago ninyo and unta sa college journey nasab nako puhon!)."><img src="Jewel5.jpg" alt=""></a>
+    </div>
+    </div>
+    <script src="lightbox-plus-jquery.js"></script>
+</body>
+</html>
